@@ -1,0 +1,40 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.nav-container {
+    display: flex;
+    color:black;
+    background-color: #333;
+    justify-content: flex-end;
+}
+
+.nav {
+    background-color: aqua;
+    color: black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.nav-container a {
+    color: black;
+    text-decoration: none;
+    padding: 10px;
+}
+
+/* Style the ul and li elements */
+.nav ul {
+    display: flex;
+    list-style: none; /* This removes the bullet points */
+    justify-content: end;
+    padding: 0;
+    margin: 0;
+}
+
+.nav li {
+    margin-right: 25px; /* Adjust spacing between items as needed */
+
+}
