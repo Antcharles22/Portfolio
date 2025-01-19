@@ -76,7 +76,6 @@ export const Main = () => {
                </div>
             </article>
         </div>
-
       </div>
      </>
   )
