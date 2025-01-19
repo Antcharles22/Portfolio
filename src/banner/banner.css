@@ -1,0 +1,104 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    
+}
+
+h1 {
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+
+
+.banner-container {
+    display: flex;
+    justify-content:space-between;
+    height: 900px;
+    padding-bottom: 100px;
+    
+
+}
+
+.banner {
+    text-align: center;
+    align-content:start;
+    margin-left: 80px;
+    padding: 0px 10px 0px 10px;
+    border-radius: 200px;
+    margin-top: 150px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    background: linear-gradient(-135deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+
+}
+
+
+
+.banner img { 
+    margin-top:1rem;                     
+    width: 400px;
+    height: 400px;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+ 
+
+
+.banner-right {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     margin-right: 200px;
+     font-size: 40px;
+     margin-left: 50px;
+    
+     width: 650px;
+}
+
+.banner-right p {
+    font-size: 22px;
+    font-family: "Antic Slab", serif;
+    font-weight: 600;
+    font-style: normal;
+      
+}
+
+.banner ul {
+    list-style: none; /* Remove default bullet points */
+    padding: 0;
+}
+
+.banner li {
+    margin-bottom: 20px;
+    margin-top: 10px;
+    padding-left: 20px;
+    
+}
+
+.logos {
+padding-top: 20px;
+}
+
+.logos svg {
+
+    margin-right: 20px;
+    
+    
+}
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
