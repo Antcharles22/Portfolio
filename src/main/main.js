@@ -38,8 +38,7 @@ export const Main = () => {
             <article className="portfolio-text">
 
             <h3>Project 3</h3>
-            <h3>Project </h3>
-            <p>crypto track</p>
+            <p>crypto tracker</p>
             </article>
         </div>
 
