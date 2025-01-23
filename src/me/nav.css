@@ -6,6 +6,7 @@ body {
 
 .nav-container {
     display: flex;
+    font-size: 1;
     justify-content:end;
     background-color: #333;
     color: #fff;
@@ -20,7 +21,10 @@ body {
 .nav {
     display: flex;
     justify-content: end;
+}
 
+.nav :hover{
+    color: blueviolet;
 }
 
 .nav-container a {
@@ -38,4 +42,19 @@ body {
 
 .nav li {
     margin-right: 25px;
+}
+
+@media screen and (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap: 10px; /* Reduce space between nav items */
+        align-items: center;
+        max-width: 100%;
+    }
 }

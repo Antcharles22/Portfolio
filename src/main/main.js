@@ -9,8 +9,8 @@ import dhama from "../images/dhama.png"
 export const Main = () => {
   return(
     <>
-    <h2>Portfolio</h2>
     <div className="portfolio-container">
+    <h2>Portfolio</h2>
         <div className="portfolio">
             <img src={pokemonapp} alt="placeholder" />
              <article className="portfolio-text">

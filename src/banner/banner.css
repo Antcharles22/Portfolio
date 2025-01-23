@@ -33,6 +33,7 @@ h1 {
     background: linear-gradient(-135deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
 	background-size: 400% 400%;
 	animation: gradient 10s ease infinite;
+    flex-wrap: wrap;
 
 }
 
@@ -52,12 +53,12 @@ h1 {
 .banner-right {
      display: flex;
      align-items: center;
+     flex-wrap: wrap;
      justify-content: center;
      flex-direction: column;
      margin-right: 200px;
      font-size: 40px;
      margin-left: 50px;
-    
      width: 650px;
 }
 
@@ -82,7 +83,9 @@ h1 {
 }
 
 .logos {
-padding-top: 20px;
+    padding-top: 20px;
+    flex-wrap: wrap;
+
 }
 
 .logos svg {
@@ -102,3 +105,100 @@ padding-top: 20px;
 		background-position: 0% 50%;
 	}
 }
+
+@media screen and (max-width: 1200px) {
+    .portfolio-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .portfolio-container img {
+        width: 80%;
+        height: auto;
+    }
+
+    .portfolio-text1 {
+        margin-left: 0;
+        text-align: center;
+    }
+
+    .banner-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .portfolio-container img {
+        width: 100%;
+        height: auto;
+    }
+
+    .portfolio-text1 {
+        font-size: 1.2rem;
+    }
+
+    .banner-right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 480px) {
+     
+    @keyframes gradient {
+        0% {
+            background-position: 0% 50%;
+        }
+        50% {
+            background-position: 50% 50%;
+        }
+        100% {
+            background-position: 0% 50%;
+        }
+    }
+
+      
+    @media screen and (max-width: 480px) {
+        .banner {
+            margin-left: 0;
+            margin-top: 3rem;
+            padding: 0px;
+            border-radius: 0;
+            height: auto;
+        }
+
+        .banner-container {
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 2rem; /* Ensure space between banner and main content */
+            width: 100%; /* Ensure the container takes full width */
+            padding: 0 10px; /* Add padding to ensure content is not touching the edges */
+            box-sizing: border-box; /* Include padding in the element's total width and height */
+        }
+    
+        .banner-right {
+            margin-right: 0;
+            margin-bottom: 1rem;
+            margin-left: 0;
+            width: 100%; /* Ensure the container takes full width */
+            padding: 0 10px; /* Add padding to ensure content is not touching the edges */
+            box-sizing: border-box; /* Include padding in the element's total width and height */
+        }
+    
+        h2 {
+            display: none; /* Hide h2 element */
+        }
+    
+        .logos {
+            display: flex;
+            padding-top: 1rem;
+            width: 100%; /* Ensure the container takes full width */
+            box-sizing: border-box; /* Include padding in the element's total width and height */
+        }
+    }
+
+
+}   
