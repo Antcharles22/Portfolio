@@ -25,6 +25,7 @@ body {
 
 .nav :hover{
     color: blueviolet;
+    cursor: pointer;
 }
 
 .nav-container a {

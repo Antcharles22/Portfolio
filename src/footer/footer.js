@@ -24,7 +24,7 @@ export const Footer = () => {
 
   return (
     <div className="footer">
-      <h1>Contact me</h1>
+      <h1 id="contact">Contact me</h1>
       <p>Feel free to contact me for any questions or feedback on my working and 
       potential Projects</p>
       <form ref={form} className='form' onSubmit={sendEmail}>
@@ -39,6 +39,11 @@ export const Footer = () => {
        <br />
        <input className='btn' type="submit" value="Send" />
       </form>
+      <div className="cv-download">
+        <a href="/Anthony_Charles2025-6.pdf" download="Anthony_charles_CV.pdf" className="cv-link" target="_blank">
+          Download My CV
+        </a>
+      </div>
     </div>
   );
 };

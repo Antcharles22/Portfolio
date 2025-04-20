@@ -1,9 +1,11 @@
 h2 {
     display: flex;
     justify-content: center;
-    font-size: 2.5rem;
-    font-weight: 700;
-  
+    font-weight: 800;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    margin-bottom: 20px;
 }
 
 h3 {
@@ -12,73 +14,123 @@ h3 {
     font-size: 2rem;
     font-weight: 700;
     margin-bottom: 20px;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  
 }
 
 h4 {
     display: flex;
     justify-content: center;
-    font-size: 1.5rem;
+    font-size: 1.8rem;
     font-weight: 500;
     margin-bottom: 20px;
     margin-left: 20px;
+    
 }
+
+
 
 .portfolio-container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    margin-top: 200px;
+    gap: 50px; /* Add spacing between portfolio items */
 }
-
-
-.portfolio-container img {
-    width: 700px;
-    height: 500px;
-    margin-bottom: 20px;
-}
-
 
 .portfolio {
     display: flex;
+    flex-direction: column; /* Stack image and text vertically */
+    align-items: center;
     justify-content: center;
     background-color: rgb(189, 150, 225);
-    margin-bottom: 200px;
+    margin-bottom: 50px; /* Adjust spacing between items */
     border-radius: 10px;
+    width: 800px; /* Set a consistent width for all portfolio items */
+    max-width: 100%; /* Ensure it doesn't exceed the container width */
+    padding: 20px; /* Add padding inside the portfolio container */
+    box-sizing: border-box; /* Include padding in the width calculation */
 }
+
 .portfolio img {
-    object-fit: cover;
-    border-radius: 10px;
+    width: 100%; /* Ensure the image takes the full width of its container */
+    height: 400px; /* Set a consistent height for all images */
+    object-fit: cover; /* Crop the image to fit the dimensions */
+    border-radius: 10px; /* Optional: Add rounded corners */
+    margin-bottom: 20px; /* Add spacing below the image */
 }
 
 .portfolio-text {
     display: flex;
-    justify-content: space-between;
     flex-direction: column;
     align-items: center;
-    padding-left: 20px;
-    padding-right: 20px;
+    text-align: center;
+    width: 100%; /* Match the width of the portfolio container */
 }
 
 .portfolio-text p {
-    font-size: 1rem;
-    width: 300px;
+    font-size: 1.2rem;
+    width: 100%; /* Allow the text to span the full width */
+    max-width: 600px; /* Set a maximum width for better readability */
     font-weight: 700;
     margin-bottom: 20px;
 }
+
 .portfolio-links {
     display: flex;
-    align-items: end;
     justify-content: center;
-    justify-items: center;
-    margin-bottom: 20px;
+    gap: 20px; /* Add spacing between the links */
+}
 
-    
+.portfolio-links svg {
+    width: 40px; /* Set the desired width */
+    height: 40px; /* Set the desired height */
+    padding: 5px; /* Optional: Adjust padding for spacing */
+    transition: transform 0.3s ease; /* Optional: Add a hover effect */
+}
+
+.portfolio-links svg:hover {
+    transform: scale(1.2); /* Optional: Slightly enlarge on hover */
+}
+
+
+.portfolio-links svg {
+    width: 40px; /* Set the desired width */
+    height: 40px; /* Set the desired height */
+    padding: 5px; /* Optional: Adjust padding for spacing */
+    transition: transform 0.3s ease; /* Optional: Add a hover effect */
+}
+
+.portfolio-links svg:hover {
+    transform: scale(1.4); /* Optional: Slightly enlarge on hover */
 }
 
 svg {
     padding: 8px;
 }
+
+.tech-stack ul {
+    display: flex; /* Use Flexbox to arrange items in a row */
+    flex-wrap: wrap; /* Allow wrapping if there are too many items */
+    gap: 10px; /* Add spacing between items */
+    padding: 10px; /* Optional: Add padding around the list */
+    margin: 0; /* Remove default margin */
+    list-style: none; /* Remove default list styling */
+}
+
+.tech-stack li {
+    background-color: #f0f0f0; /* Optional: Add a background color */
+    padding: 5px 10px; /* Optional: Add padding for better spacing */
+    border-radius: 5px; /* Optional: Add rounded corners */
+    font-size: 14px; /* Adjust font size as needed */
+}
+
+.tech-stack li:hover {
+    background-color: #b7becb; /* Optional: Change background color on hover */
+    cursor: pointer; /* Optional: Change cursor to pointer */
+}
+
 
 @media screen and (min-width: 768px) {
     h2 {
