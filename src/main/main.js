@@ -79,8 +79,8 @@ export const Main = () => {
         <div className="portfolio">
             <h4>coming soon!</h4>
             <article className="portfolio-text">
-            <h3>Project-3</h3>
-            <p>crypto chart</p>
+            <h3>Project-4</h3>
+            <p>gamer catalog</p>
             </article>
         </div>
 
